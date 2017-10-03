@@ -1,12 +1,37 @@
 public class Runner {
 
     public static void main(String[] args) {
-    System.out.print(sleepIn())
+        System.out.print(sleepIn(false, true));
+        int[] x = new int[5];
+        x[0] = 1;
+        x[1] = 1;
+        x[2] = 2;
+        x[3] = 2;
+        x[4] = 1;
+        int[] y = new int[2];
+        x[0] = 3;
+        x[1] = 3;
+        int[] q = new int[4];
+        x[0] = 1;
+        x[1] = 2;
+        x[2] = 3;
+        x[3] = 4;
+        int[] g = new int[2];
+        x[0] = 10;
+        x[1] = 10;
+        System.out.print(noTriples(x));
+        System.out.print(nonStart("Java", "Code"));
+        System.out.print(double23(y));
+        System.out.print(teenSum(13,2));
+        System.out.print(loneSum(3,2,3));
+        System.out.print(oneTwo("tca"));
+        System.out.print(sumDigits("aa11b33"));
+        System.out.print(no14(q));
+        System.out.print(canBalance(g));
     }
 
-    
 
-    public boolean sleepIn(boolean weekday, boolean vacation) {
+    public static boolean sleepIn(boolean weekday, boolean vacation) {
         if (!weekday || vacation){
             return true;
         }else {
